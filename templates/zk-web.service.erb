@@ -1,0 +1,16 @@
+[Unit]
+Description=Starts and stops a single zk-web instance on this system
+Documentation=https://github.com/qiuxiafei/zk-web
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=<%= @user %>
+Group=<%= @user %>
+Type=simple
+WorkingDirectory=<%= @install_path %>
+ExecStart=/bin/lein run
+
+[Install]
+WantedBy=multi-user.target
+

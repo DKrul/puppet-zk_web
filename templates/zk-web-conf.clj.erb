@@ -1,0 +1,8 @@
+{
+  :server-port <%= @server_port %>
+  :users {
+<% @real_users.each do |username, password| -%>
+    "<%= username %>" "<%= password %>"
+<% end -%>
+  }
+}

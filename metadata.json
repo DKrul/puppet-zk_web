@@ -1,0 +1,32 @@
+{
+"name": "Fabian1976/zk_web",
+"version": "1.0.0",
+"author": "Fabian1976",
+"summary": "This module manages the Zookeeper web-interface zk-web (source: https://github.com/qiuxiafei/zk-web)",
+"license": "Apache-2.0",
+"source": "https://github.com/Fabian1976/puppet-zk_web",
+"project_page": "https://github.com/Fabian1976/puppet-zk_web",
+"issues_url": "https://github.com/Fabian1976/puppet-zk_web/issues",
+"operatingsystem_support": [
+  {
+    "operatingsystem": "RedHat",
+    "operatingsystemrelease": [
+      "7"
+    ]
+  }
+],
+"dependencies": [
+    {
+      "name": "jstocks/leiningen",
+      "version_requirement": "0.1.2"
+    },
+    {
+      "name": "puppet/archive",
+      "version_requirement": "< 2.0.0"
+    },
+    {
+      "name": "maestrodev/wget",
+      "version_requirement": "< 2.0.0"
+    }
+  ]
+}
